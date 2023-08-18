@@ -21,10 +21,6 @@ const (
 )
 
 type Request struct {
-	state         protoimpl.MessageState
-	sizeCache     protoimpl.SizeCache
-	unknownFields protoimpl.UnknownFields
-
 	Message   string `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
 	IDContact string `protobuf:"bytes,2,opt,name=IDContact,proto3" json:"IDContact,omitempty"`
 	Name      string `protobuf:"bytes,3,opt,name=Name,proto3" json:"Name,omitempty"`
