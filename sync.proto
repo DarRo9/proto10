@@ -1,0 +1,21 @@
+syntax = "proto3";
+package proto;
+option go_package = "./proto";
+
+service DelAcc {
+    rpc Do(Request) returns (Response) {}
+}
+
+message Request {
+    string message = 1;
+    string IDContact = 2; 
+    string Name = 3;
+    string Mail = 4;
+    string IDAccount = 5;
+    string AToken = 6;
+    string KeyUni = 7;
+}
+
+message Response {
+    string message = 2;
+}
